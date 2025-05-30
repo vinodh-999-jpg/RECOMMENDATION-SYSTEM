@@ -80,3 +80,6 @@ This movie recommendation system showcases how machine learning can be integrate
 
 # OUTPUT
 
+![Image](https://github.com/user-attachments/assets/5c04152a-66c1-43fb-a4df-7be46a8dc352)
+![Image](https://github.com/user-attachments/assets/03251c1d-4edf-464a-b028-0e9bae8d491a)
+
