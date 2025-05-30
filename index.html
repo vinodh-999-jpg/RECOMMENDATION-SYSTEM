@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Recommendation System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Movie Recommendation System</h1>
+        <form method="post">
+            <input type="text" name="user_id" placeholder="Enter your User ID" required>
+            <br>
+            <select name="genre" required>
+                <option value="" disabled selected>Select a Genre</option>
+                {% for genre in genres %}
+                <option value="{{ genre }}">{{ genre }}</option>
+                {% endfor %}
+            </select>
+            <br>
+            <button type="submit">Get Recommendations</button>
+        </form>
+
+        {% if recommendations %}
+            <h2>Recommended Movies:</h2>
+            {% for movie, score in recommendations %}
+            <div class="card">
+                <strong>{{ movie }}</strong><br>
+                Predicted Rating: {{ '%.2f'|format(score) }}
+            </div>
+            {% endfor %}
+        {% endif %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+/* style.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Background image setup */
+    background: 
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('/static/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white; /* Make text white for contrast */
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    padding: 30px 40px;
+    max-width: 450px;
+    width: 100%;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    text-align: center;
+    color: #333; /* override white text inside container */
+}
+
+/* Keep the rest the same but override text color inside container */
+
+h1 {
+    margin-bottom: 25px;
+    color: #222;
+}
+
+/* Form elements */
+form input[type="text"],
+form select {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form select:focus {
+    outline: none;
+    border-color: #007BFF;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.card {
+    background-color: #e9f1ff;
+    border-left: 5px solid #007BFF;
+    padding: 15px 20px;
+    margin: 10px 0;
+    border-radius: 6px;
+    text-align: left;
+    font-size: 16px;
+    color: #222;
+}
+
+.card strong {
+    font-size: 18px;
+    color: #0056b3;
+}
